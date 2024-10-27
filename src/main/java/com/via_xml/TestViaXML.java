@@ -7,8 +7,12 @@ public class TestViaXML {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        FileReader reader = context.getBean(FileReader.class);
+//        FileReader reader = context.getBean(FileReader.class);
 
-        reader.action();
+//        reader.action();
+
+        ReaderService service = context.getBean(ReaderService.class);
+
+        service.getReader().action();
     }
 }

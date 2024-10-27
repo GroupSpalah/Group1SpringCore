@@ -11,4 +11,8 @@
         <constructor-arg name="fileName" value="Poem.txt"/>
     </bean>
 
+    <bean name="readerService" class="com.via_xml.ReaderService">
+        <constructor-arg name="reader" ref="fileReader" />
+    </bean>
+
     </beans>
