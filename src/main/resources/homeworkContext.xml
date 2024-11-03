@@ -7,28 +7,6 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-    <context:component-scan base-package="com.implicing_wiring" />
-
-    <bean name="fileReader" class="com.via_xml.FileReader" scope="prototype">
-        <constructor-arg name="fileName" value="Poem.txt"/>
-    </bean>
-
-    <!--<bean name="reader" class="com.via_xml.FileReader" scope="prototype">
-        <constructor-arg name="fileName" value="Poem.txt"/>
-    </bean>-->
-
-    <bean name="threadService" class="com.via_xml.ThreadService">
-        <property name="name" value="New thread" />
-    </bean>
-
-    <bean name="readerService" class="com.via_xml.ReaderService">
-        <constructor-arg name="reader" ref="fileReader"/>
-    </bean>
-
-<!--    <bean name="newReaderService" class="com.via_xml.ReaderService" autowire="byName" />-->
-    <bean name="newReaderService" class="com.via_xml.ReaderService" autowire="byType" />
-<!--    <bean name="newReaderService" class="com.via_xml.ReaderService" autowire="constructor" />-->
-
     <bean name="person" class="com.via_xml.Person">
         <constructor-arg name="name" value="Jack"/>
         <constructor-arg name="age" value="30"/>
