@@ -12,7 +12,25 @@
     </bean>
 
     <bean name="readerService" class="com.via_xml.ReaderService">
-        <constructor-arg name="reader" ref="fileReader" />
+        <constructor-arg name="reader" ref="fileReader"/>
     </bean>
 
-    </beans>
+    <bean name="person" class="com.via_xml.Person">
+        <constructor-arg name="name" value="Jack"/>
+        <constructor-arg name="age" value="30"/>
+    </bean>
+
+    <bean name="geometry" class="com.homeworks.hw_27_10_24.Geometry">
+
+    </bean>
+
+    <bean name="programmer" class="com.homeworks.hw_27_10_24.Programmer">
+        <constructor-arg name="geometry" ref="geometry"/>
+    </bean>
+
+    <bean name="basicCalculator" class="com.homeworks.hw_27_10_24.BasicCalculator">
+        <constructor-arg name="programmer" ref="programmer"/>
+    </bean>
+
+
+</beans>

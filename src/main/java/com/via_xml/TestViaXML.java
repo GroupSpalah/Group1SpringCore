@@ -14,5 +14,9 @@ public class TestViaXML {
         ReaderService service = context.getBean(ReaderService.class);
 
         service.getReader().action();
+
+        Person person = context.getBean(Person.class);
+
+        System.out.println(person);
     }
 }
