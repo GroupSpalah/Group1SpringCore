@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 @Builder
 @NoArgsConstructor
 @ToString
-@Component("programmer")
 public class Programmer implements Calculable {
 
     @Override

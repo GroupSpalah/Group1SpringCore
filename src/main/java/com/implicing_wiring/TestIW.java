@@ -11,6 +11,8 @@ public class TestIW {
 
 //        System.out.println(man.getPhone().getNumber());
 
-        man.getCallable().call();
+//        man.getCallable().call();
+
+        man.getReaderService().getReader().action();
     }
 }

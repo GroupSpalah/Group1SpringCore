@@ -1,5 +1,6 @@
 package com.implicing_wiring;
 
+import com.via_xml.ReaderService;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,4 +22,7 @@ public class Man {
     @Autowired
     @Qualifier("skype")
     Callable callable;
+
+    @Autowired
+    ReaderService readerService;
 }
