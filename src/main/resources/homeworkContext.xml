@@ -7,19 +7,18 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-    <bean name="person" class="com.via_xml.Person">
-        <constructor-arg name="name" value="Jack"/>
-        <constructor-arg name="age" value="30"/>
-    </bean>
+        <context:component-scan base-package="com.homeworks.hw_03_11_24.hw_implicing_wiring"/>
 
-    <bean name="geometry" class="com.homeworks.hw_27_10_24.Geometry" />
+<!--
 
-    <bean name="programmer" class="com.homeworks.hw_27_10_24.Programmer">
-        <constructor-arg name="geometry" ref="geometry"/>
-    </bean>
+    <bean name="geometryA" class="com.homeworks.hw_03_11_24.hw_autowire.GeometryA"/>
 
-    <bean name="basicCalculator" class="com.homeworks.hw_27_10_24.BasicCalculator">
-        <constructor-arg name="programmer" ref="programmer"/>
-    </bean>
-    
+    <bean name="programmerA" class="com.homeworks.hw_03_11_24.hw_autowire.ProgrammerA" autowire="byName"/>
+
+&lt;!&ndash;
+    <bean name="autowireBasicCalculator" class="com.homeworks.hw_03_11_24.hw_autowire.BasicCalculator" autowire="byName"/>
+&ndash;&gt;
+    <bean name="autowireBasicCalculator" class="com.homeworks.hw_03_11_24.hw_autowire.BasicCalculator" autowire="byType"/>
+-->
+
 </beans>

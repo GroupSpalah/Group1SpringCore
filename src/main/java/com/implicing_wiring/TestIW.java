@@ -11,6 +11,6 @@ public class TestIW {
 
 //        System.out.println(man.getPhone().getNumber());
 
-        man.getSkype().call();
+        man.getCallable().call();
     }
 }
