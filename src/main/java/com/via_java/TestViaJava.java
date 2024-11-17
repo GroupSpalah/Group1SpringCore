@@ -8,9 +8,9 @@ public class TestViaJava {
 
         Person person = context.getBean(Person.class);
 
-//        System.out.println(person.getGMail().getName());
+        System.out.println(person.getGMail().getName());
 
-//        person.getSendable().send();
-//        person.getMan().getReaderService().getReader().action();
+        //person.getSendable().send();
+        //person.getMan().getReaderService().getReader().action();
     }
 }

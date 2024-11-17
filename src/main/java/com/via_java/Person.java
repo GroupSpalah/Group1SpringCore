@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @NoArgsConstructor
 @ToString
 public class Person {
-//    GMail gMail;
+    GMail gMail;
     Sendable sendable;
 
     @Autowired

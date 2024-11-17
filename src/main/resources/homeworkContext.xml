@@ -9,16 +9,14 @@
 
         <context:component-scan base-package="com.homeworks.hw_03_11_24.hw_implicing_wiring"/>
 
-<!--
 
     <bean name="geometryA" class="com.homeworks.hw_03_11_24.hw_autowire.GeometryA"/>
 
     <bean name="programmerA" class="com.homeworks.hw_03_11_24.hw_autowire.ProgrammerA" autowire="byName"/>
 
-&lt;!&ndash;
+<!--
     <bean name="autowireBasicCalculator" class="com.homeworks.hw_03_11_24.hw_autowire.BasicCalculator" autowire="byName"/>
-&ndash;&gt;
-    <bean name="autowireBasicCalculator" class="com.homeworks.hw_03_11_24.hw_autowire.BasicCalculator" autowire="byType"/>
 -->
+    <bean name="autowireBasicCalculator" class="com.homeworks.hw_03_11_24.hw_autowire.BasicCalculator" autowire="byType"/>
 
 </beans>
